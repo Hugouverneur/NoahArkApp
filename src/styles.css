@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    color: #294844;
+}
+
+/* Inputs */
+input, textarea {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #DFE3E8;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-radius: 6px;
+    background-color: #DAE8D3;
+}
+
+/* Boutons */
+.primary_btn {
+    margin: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2D9F46;
+    color: #FCFCFC;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.primary_btn:hover {
+    background-color: #207332;
+    cursor: pointer;
+}
+
+.secondary_btn {
+    margin: 12px;
+    padding: 8px 16px;
+    border: solid 3px #2D9F46;
+    border-radius: 6px;
+    color: #2D9F46;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.secondary_btn:hover {
+    border: solid 3px #00CC76;
+    color: #00CC76;
+    cursor: pointer;
+}
+
+.thirdery_btn {
+    border: none;
+    color: #666666;
+    background-color: transparent;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.thirdery_btn:hover {
+    color: #2D9F46;
+    cursor: pointer;
+}

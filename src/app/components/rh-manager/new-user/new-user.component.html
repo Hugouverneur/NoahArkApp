@@ -1,0 +1,17 @@
+<h1>Ajouter un utilisateur</h1>
+
+<form [formGroup]="addUserForm" (ngSubmit)="createUser()">
+
+    <p>Prénom :</p>
+    <input type="string" id="user_name" formControlName="user_name">
+    <p>Nom :</p>
+    <input type="string" id="user_lastname" formControlName="user_lastname">
+    <p>E-mail :</p>
+    <input type="string" id="user_email" formControlName="user_email">
+
+
+    <button class="primary_btn" type="submit" [disabled]="addUserForm.invalid">Valider</button>
+
+</form>
+<button class="secondary_btn">Hello</button>
+<button class="thirdery_btn">There</button>
