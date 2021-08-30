@@ -1,0 +1,8 @@
+.tax_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.tax_list a:hover {
+    color: #2D9F46;
+}

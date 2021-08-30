@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinomie.component';
 import { ListUsersComponent } from './components/rh-manager/list-users/list-users.component';
 import { NewUserComponent } from './components/rh-manager/new-user/new-user.component';
 import { ListClassComponent } from './taxinomie/list-class/list-class.component';
@@ -22,12 +23,13 @@ const routes: Routes = [
   { path: '', pathMatch: "full", component: ListUsersComponent },
   { path: 'user-list', component: ListUsersComponent },
   { path: 'user-new', component: NewUserComponent },
-  { path: 'kingdom-new', component: NewKingdomComponent },
-  { path: 'kingdom-list', component: ListKingdomComponent },
+  { path: 'taxinomie-list', component: ListTaxinomieComponent },
+  { path: 'kingdoms-new', component: NewKingdomComponent },
+  { path: 'kingdoms-list', component: ListKingdomComponent },
   { path: 'phylums-new', component: NewPhylumComponent },
   { path: 'phylums-list', component: ListPhylumComponent },
-  { path: 'classe-new', component: NewClassComponent },
-  { path: 'classe-list', component: ListClassComponent },
+  { path: 'classes-new', component: NewClassComponent },
+  { path: 'classes-list', component: ListClassComponent },
   { path: 'orders-new', component: NewOrderComponent },
   { path: 'orders-list', component: ListOrderComponent },
   { path: 'familys-new', component: NewFamilyComponent },

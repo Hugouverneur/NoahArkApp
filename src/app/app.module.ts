@@ -23,6 +23,7 @@ import { NewGenuComponent } from './taxinomie/new-genu/new-genu.component';
 import { ListGenuComponent } from './taxinomie/list-genu/list-genu.component';
 import { ListSpiciesComponent } from './taxinomie/list-spicies/list-spicies.component';
 import { NewSpiciesComponent } from './taxinomie/new-spicies/new-spicies.component';
+import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinomie.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { NewSpiciesComponent } from './taxinomie/new-spicies/new-spicies.compone
     ListGenuComponent,
     ListSpiciesComponent,
     NewSpiciesComponent,
+    ListTaxinomieComponent,
   ],
   imports: [
     BrowserModule,

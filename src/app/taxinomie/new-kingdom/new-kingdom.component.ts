@@ -36,7 +36,7 @@ export class NewKingdomComponent implements OnInit {
   createKingdom() {
     const newKingdom = this.onaddKingdomFormSubmit();
     this.kingdomService.createKingdom(newKingdom);
-    this.route.navigate(['/kingdom-list']);
+    this.route.navigate(['/kingdoms-list']);
   }
 
 }
