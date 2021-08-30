@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class NewUserComponent implements OnInit {
 
   addUserForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private route: Router) { }
 
   ngOnInit(): void {
     this.initaddUserForm();
@@ -39,6 +40,7 @@ export class NewUserComponent implements OnInit {
   createUser() {
     const newUser = this.onaddUserFormSubmit();
     this.usersService.createUser(newUser);
+    this.route.navigate(['/user-list']);
   }
 
 }

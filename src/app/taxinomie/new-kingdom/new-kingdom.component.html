@@ -1,0 +1,10 @@
+<h1>Ajouter un règne</h1>
+
+<form [formGroup]="addKingdomForm" (ngSubmit)="createKingdom()">
+
+    <p>Nom :</p>
+    <input type="string" id="kingdom_name" formControlName="kingdom_name">
+
+    <button class="primary_btn" type="submit" [disabled]="addKingdomForm.invalid">Valider</button>
+
+</form>

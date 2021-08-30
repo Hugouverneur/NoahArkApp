@@ -1,0 +1,15 @@
+<h1>Ajouter un embranchement</h1>
+
+<form [formGroup]="addPhylumForm" (ngSubmit)="createPhylum()">
+
+    <p>Nom :</p>
+    <input type="string" id="phylum_name" formControlName="phylum_name">
+
+    <p>Règne :</p>
+    <select id="kingdom_id" formControlName="kingdom_id">
+        <option *ngFor="let kingdom of kingdoms" value="{{ kingdom.kingdom_id }}">{{ kingdom.kingdom_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addPhylumForm.invalid">Valider</button>
+
+</form>

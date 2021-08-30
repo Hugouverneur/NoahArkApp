@@ -1,0 +1,15 @@
+<h1>Règne</h1>
+<a routerLink="/kingdom-new">Ajouter un règne</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Règne</th>
+        </thead>
+        <tbody *ngFor="let kingdom of kingdoms">
+            <tr>
+                <td>{{ kingdom.kingdom_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

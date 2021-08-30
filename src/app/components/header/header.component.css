@@ -1,0 +1,20 @@
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 48px; */
+    background-color: #2D9F46;
+    color: #FCFCFC;
+}
+
+.left_nav, .right_nav {
+    margin: 16px 24px;
+}
+
+nav a {
+    color: #FCFCFC;
+    margin: 0px 8px;
+}

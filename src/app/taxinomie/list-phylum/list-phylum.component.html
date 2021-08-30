@@ -1,0 +1,17 @@
+<h1>Embranchements</h1>
+<a routerLink="/phylums-new">Ajouter un embranchement</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Embranchement</th>
+            <th>Règne</th>
+        </thead>
+        <tbody *ngFor="let phylum of phylums">
+            <tr>
+                <td>{{ phylum.phylum_name }}</td>
+                <td>{{ phylum.kingdom_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

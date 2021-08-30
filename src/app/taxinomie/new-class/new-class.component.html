@@ -1,0 +1,15 @@
+<h1>Ajouter une classe</h1>
+
+<form [formGroup]="addClassForm" (ngSubmit)="createClass()">
+
+    <p>Nom :</p>
+    <input type="string" id="user_name" formControlName="user_name">
+    <p>Parent :</p>
+    <select type="number" id="user_lastname" formControlName="user_lastname">
+        <option value=""></option>
+    </select>
+
+
+    <button class="primary_btn" type="submit" [disabled]="addClassForm.invalid">Valider</button>
+
+</form>
