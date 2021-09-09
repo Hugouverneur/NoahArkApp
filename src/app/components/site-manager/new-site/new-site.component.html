@@ -1,0 +1,14 @@
+<h1>Ajouter un site</h1>
+
+<form [formGroup]="addSiteForm" (ngSubmit)="createSite()">
+
+    <p>Ville du site :</p>
+    <input type="string" id="site_city" formControlName="site_city">
+
+    <p>Pays du site :</p>
+    <input type="string" id="site_country" formControlName="site_country">
+
+
+    <button class="primary_btn" type="submit" [disabled]="addSiteForm.invalid">Valider</button>
+
+</form>

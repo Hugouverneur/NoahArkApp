@@ -1,0 +1,19 @@
+<h1>Sites</h1>
+<a routerLink="/sites-new">Ajouter un site</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Ville</th>
+            <th>Pays</th>
+            <th></th>
+        </thead>
+        <tbody *ngFor="let site of sites">
+            <tr>
+                <td>{{ site.site_city }}</td>
+                <td>{{ site.site_country }}</td>
+                <td><a routerLink="/sites-detail/{{ site.site_id }}">plus</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
