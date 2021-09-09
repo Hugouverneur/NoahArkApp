@@ -1,1 +1,15 @@
-<p>new-genu works!</p>
+<h1>Ajouter un genre</h1>
+
+<form [formGroup]="addGenusForm" (ngSubmit)="createGenus()">
+
+    <p>Nom :</p>
+    <input type="string" id="genus_name" formControlName="genus_name">
+
+    <p>Famille :</p>
+    <select id="family_id" formControlName="family_id">
+        <option *ngFor="let family of familys" value="{{ family.family_id }}">{{ family.family_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addGenusForm.invalid">Valider</button>
+
+</form>

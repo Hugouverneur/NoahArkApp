@@ -1,1 +1,15 @@
-<p>new-family works!</p>
+<h1>Ajouter une famille</h1>
+
+<form [formGroup]="addFamilyForm" (ngSubmit)="createFamily()">
+
+    <p>Nom :</p>
+    <input type="string" id="family_name" formControlName="family_name">
+
+    <p>Règne :</p>
+    <select id="order_id" formControlName="order_id">
+        <option *ngFor="let order of orders" value="{{ order.order_id }}">{{ order.order_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addFamilyForm.invalid">Valider</button>
+
+</form>

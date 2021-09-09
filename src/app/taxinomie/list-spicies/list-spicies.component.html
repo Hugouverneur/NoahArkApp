@@ -1,1 +1,27 @@
-<p>list-spicies works!</p>
+<h1>Espèces</h1>
+<a routerLink="/spicies-new">Ajouter une espèce</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Règne</th>
+            <th>Embranchement</th>
+            <th>Classe</th>
+            <th>Ordre</th>
+            <th>Famille</th>
+            <th>Genre</th>
+            <th>Espèce</th>
+        </thead>
+        <tbody *ngFor="let specie of species">
+            <tr>
+                <td>{{ specie.kingdom_name }}</td>
+                <td>{{ specie.phylum_name }}</td>
+                <td>{{ specie.class_name }}</td>
+                <td>{{ specie.order_name }}</td>
+                <td>{{ specie.family_name }}</td>
+                <td>{{ specie.genus_name }}</td>
+                <td>{{ specie.species_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

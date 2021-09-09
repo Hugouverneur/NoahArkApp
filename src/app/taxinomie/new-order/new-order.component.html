@@ -1,1 +1,15 @@
-<p>new-order works!</p>
+<h1>Ajouter un ordre</h1>
+
+<form [formGroup]="addOrderForm" (ngSubmit)="createOrder()">
+
+    <p>Nom :</p>
+    <input type="string" id="order_name" formControlName="order_name">
+
+    <p>Classe :</p>
+    <select id="class_id" formControlName="class_id">
+        <option *ngFor="let classe of classes" value="{{ classe.class_id }}">{{ classe.class_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addOrderForm.invalid">Valider</button>
+
+</form>

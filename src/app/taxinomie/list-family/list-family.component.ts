@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FamilysService } from 'src/app/services/familys.service';
 
 @Component({
   selector: 'app-list-family',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListFamilyComponent implements OnInit {
 
-  constructor() { }
+  familys: any = [];
+
+  constructor(private familysService: FamilysService) { }
 
   ngOnInit(): void {
+    this.getFamilys();
+  }
+
+  getFamilys() {
+    this.familysService.getFamilys().then((response: any) => {
+      this.familys = response;
+    })
   }
 
 }

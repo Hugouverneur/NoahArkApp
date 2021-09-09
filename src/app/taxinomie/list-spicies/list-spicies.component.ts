@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpiciesService } from 'src/app/services/spicies.service';
 
 @Component({
   selector: 'app-list-spicies',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListSpiciesComponent implements OnInit {
 
-  constructor() { }
+  species: any = [];
+
+  constructor(private spiciesService: SpiciesService) { }
 
   ngOnInit(): void {
+    this.getSpecies();
+  }
+
+  getSpecies() {
+    this.spiciesService.getSpicies().then((response: any) => {
+      console.log(response);
+      
+      this.species = response;
+    })
   }
 
 }

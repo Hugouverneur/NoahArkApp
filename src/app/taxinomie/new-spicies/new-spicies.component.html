@@ -1,1 +1,15 @@
-<p>new-spicies works!</p>
+<h1>Ajouter une espèce</h1>
+
+<form [formGroup]="addSpiciesForm" (ngSubmit)="createSpicies()">
+
+    <p>Nom :</p>
+    <input type="string" id="spicies_name" formControlName="spicies_name">
+
+    <p>Règne :</p>
+    <select id="genus_id" formControlName="genus_id">
+        <option *ngFor="let genu of genus" value="{{ genu.genus_id }}">{{ genu.genus_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addSpiciesForm.invalid">Valider</button>
+
+</form>

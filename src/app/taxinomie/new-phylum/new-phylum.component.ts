@@ -51,7 +51,6 @@ export class NewPhylumComponent implements OnInit {
   // Récupération de tous les règnes
   getKingdoms() {
     this.kingdomsService.getKingdoms().then((response: any) => {
-      console.log(response);
       this.kingdoms = response;
     })
   }

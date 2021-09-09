@@ -1,1 +1,19 @@
-<p>list-class works!</p>
+<h1>Classes</h1>
+<a routerLink="/classes-new">Ajouter une classe</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Règne</th>
+            <th>Embranchement</th>
+            <th>Classe</th>
+        </thead>
+        <tbody *ngFor="let classe of classes">
+            <tr>
+                <td>{{ classe.kingdom_name }}</td>
+                <td>{{ classe.phylum_name }}</td>
+                <td>{{ classe.class_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

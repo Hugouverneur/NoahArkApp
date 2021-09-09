@@ -4,13 +4,13 @@
 <section>
     <table>
         <thead>
-            <th>Embranchement</th>
             <th>Règne</th>
+            <th>Embranchement</th>
         </thead>
         <tbody *ngFor="let phylum of phylums">
             <tr>
-                <td>{{ phylum.phylum_name }}</td>
                 <td>{{ phylum.kingdom_name }}</td>
+                <td>{{ phylum.phylum_name }}</td>
             </tr>
         </tbody>
     </table>

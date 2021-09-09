@@ -1,1 +1,26 @@
-<p>list-genu works!</p>
+<h1>Genres</h1>
+<a routerLink="/genus-new">Ajouter un genre</a>
+
+<section>
+    <table>
+        <thead>
+            <th>Règne</th>
+            <th>Embranchement</th>
+            <th>Classe</th>
+            <th>Ordre</th>
+            <th>Famille</th>
+            <th>Genre</th>
+        </thead>
+        <tbody *ngFor="let genu of genus">
+            <tr>
+                <td>{{ genu.kingdom_name }}</td>
+                <td>{{ genu.phylum_name }}</td>
+                <td>{{ genu.class_name }}</td>
+                <td>{{ genu.order_name }}</td>
+                <td>{{ genu.family_name }}</td>
+                <td>{{ genu.family_name }}</td>
+                <td>{{ genu.genus_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

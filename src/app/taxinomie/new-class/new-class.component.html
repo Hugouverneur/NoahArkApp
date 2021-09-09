@@ -3,10 +3,11 @@
 <form [formGroup]="addClassForm" (ngSubmit)="createClass()">
 
     <p>Nom :</p>
-    <input type="string" id="user_name" formControlName="user_name">
-    <p>Parent :</p>
-    <select type="number" id="user_lastname" formControlName="user_lastname">
+    <input type="string" id="class_name" formControlName="class_name">
+    <p>Embranchement :</p>
+    <select type="number" id="phylum_id" formControlName="phylum_id">
         <option value=""></option>
+        <option *ngFor="let phylum of phylums" value="{{ phylum.phylum_id }}">{{ phylum.phylum_name }}</option>
     </select>
 
 
