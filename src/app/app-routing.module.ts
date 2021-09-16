@@ -3,9 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinomie.component';
 import { ListUsersComponent } from './components/rh-manager/list-users/list-users.component';
 import { NewUserComponent } from './components/rh-manager/new-user/new-user.component';
+import { DetailRoomComponent } from './components/site-manager/detail-room/detail-room.component';
 import { DetailSiteComponent } from './components/site-manager/detail-site/detail-site.component';
 import { DetailStorageComponent } from './components/site-manager/detail-storage/detail-storage.component';
 import { ListSiteComponent } from './components/site-manager/list-site/list-site.component';
+import { MoveLotComponent } from './components/site-manager/move-lot/move-lot.component';
+import { NewLotComponent } from './components/site-manager/new-lot/new-lot.component';
 import { NewRoomComponent } from './components/site-manager/new-room/new-room.component';
 import { NewSiteComponent } from './components/site-manager/new-site/new-site.component';
 import { NewStorageComponent } from './components/site-manager/new-storage/new-storage.component';
@@ -35,6 +38,9 @@ const routes: Routes = [
   { path: 'new-storage/:id', component: NewStorageComponent },
   { path: 'detail-storage/:id', component: DetailStorageComponent },
   { path: 'new-room/:id', component: NewRoomComponent },
+  { path: 'new-lot/:id', component: NewLotComponent },
+  { path: 'detail-room/:id', component: DetailRoomComponent },
+  { path: 'move-lot/:id', component: MoveLotComponent },
 
   { path: 'taxinomie-list', component: ListTaxinomieComponent },
   { path: 'kingdoms-new', component: NewKingdomComponent },

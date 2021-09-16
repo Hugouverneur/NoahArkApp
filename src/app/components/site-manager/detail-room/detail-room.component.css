@@ -10,9 +10,15 @@
     max-height: 189px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
     transition: ease 0.2s;
-    border: solid 0px #2D9F46;
+    border: solid 0px #FC9B69;
 }
 
 .room_card:hover {
-    border-left: solid 12px #2D9F46;
+    border-left: solid 12px #FC9B69;
+}
+
+.spacebw_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

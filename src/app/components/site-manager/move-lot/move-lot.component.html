@@ -1,0 +1,12 @@
+<h1>Déplacer un lot</h1>
+
+<form [formGroup]="moveLotForm" (ngSubmit)="moveLot()">
+
+    <p>Nom de la salle :</p>
+    <select formControlName="room_id" id="room_id">
+        <option *ngFor="let room of rooms" value="{{ room.room_id }}">{{ room.site_city }} · stock n°{{ room.storage_id }} · {{ room.room_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="moveLotForm.invalid">Valider</button>
+
+</form>

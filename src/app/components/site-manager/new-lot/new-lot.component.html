@@ -1,0 +1,12 @@
+<h1>Ajouter un lot</h1>
+
+<form [formGroup]="addLotForm" (ngSubmit)="createLot()">
+
+    <p>Nom de la salle :</p>
+    <select formControlName="species_id" id="species_id">
+        <option *ngFor="let specie of species" value="{{ specie.species_id }}">{{ specie.species_name }}</option>
+    </select>
+
+    <button class="primary_btn" type="submit" [disabled]="addLotForm.invalid">Valider</button>
+
+</form>

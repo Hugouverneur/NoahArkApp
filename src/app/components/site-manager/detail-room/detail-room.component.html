@@ -1,0 +1,10 @@
+<h1>Salle</h1>
+
+<h2>Liste des lots :</h2>
+
+<a routerLink="/move-lot/{{ lot.lot_id }}" *ngFor="let lot of lots" class="room_card">
+    <div class="spacebw_header">
+        <h3>Lot n°{{ lot.lot_id }}</h3>
+        <p>{{ lot.species_name }}</p>
+    </div>
+</a>

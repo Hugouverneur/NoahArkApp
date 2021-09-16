@@ -30,6 +30,9 @@ import { DetailSiteComponent } from './components/site-manager/detail-site/detai
 import { NewStorageComponent } from './components/site-manager/new-storage/new-storage.component';
 import { NewRoomComponent } from './components/site-manager/new-room/new-room.component';
 import { DetailStorageComponent } from './components/site-manager/detail-storage/detail-storage.component';
+import { NewLotComponent } from './components/site-manager/new-lot/new-lot.component';
+import { DetailRoomComponent } from './components/site-manager/detail-room/detail-room.component';
+import { MoveLotComponent } from './components/site-manager/move-lot/move-lot.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,9 @@ import { DetailStorageComponent } from './components/site-manager/detail-storage
     NewStorageComponent,
     NewRoomComponent,
     DetailStorageComponent,
+    NewLotComponent,
+    DetailRoomComponent,
+    MoveLotComponent,
   ],
   imports: [
     BrowserModule,

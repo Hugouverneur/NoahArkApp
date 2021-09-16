@@ -22,6 +22,10 @@ export class RoomsService {
     });
   }
 
+  getAllRooms() {
+    return this.request('GET', `${environment.serverUrl}/all-rooms`);
+  }
+
   getRooms(roomId: number) {
     return this.request('GET', `${environment.serverUrl}/room/${roomId}`);
   }

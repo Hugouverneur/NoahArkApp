@@ -4,7 +4,10 @@
 
 <h2>Liste des salles :</h2>
 <a routerLink="/detail-room/{{ room.room_id }}" *ngFor="let room of rooms" class="room_card">
-    <h3>{{ room.room_name }}</h3>
+    <div class="spacebw_header">
+        <h3>{{ room.room_name }}</h3>
+        <a routerLink="/new-lot/{{ room.room_id }}" class="add_btn">+</a>
+    </div>
     <div style="align-self: flex-end;">
         <table>
             <tr>
