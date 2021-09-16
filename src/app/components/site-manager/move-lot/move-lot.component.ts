@@ -45,7 +45,7 @@ export class MoveLotComponent implements OnInit {
   moveLot() {
     const lot = this.onMoveLotFormSubmit();
     this.lotsService.moveLot(lot);
-    this.route.navigate(['/detail-room/' + lot.lot_id]);
+    this.route.navigate(['/detail-room/' + lot.room_id]);
   }
 
   getRooms() {
