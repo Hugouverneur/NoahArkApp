@@ -3,29 +3,31 @@
 <a routerLink="/new-room/{{ stockageId }}">Ajouter une salle</a>
 
 <h2>Liste des salles :</h2>
-<a routerLink="/detail-room/{{ room.room_id }}" *ngFor="let room of rooms" class="room_card">
-    <div class="spacebw_header">
-        <h3>{{ room.room_name }}</h3>
-        <a routerLink="/new-lot/{{ room.room_id }}" class="add_btn">+</a>
-    </div>
-    <div style="align-self: flex-end;">
-        <table>
-            <tr>
-                <td>Luminosité :</td>
-                <td>{{ room.brightness_value }}</td>
-            </tr>
-            <tr>
-                <td>Température :</td>
-                <td>{{ room.temperature_value }}</td>
-            </tr>
-            <tr>
-                <td>Humidité :</td>
-                <td>{{ room.humidity_value }}</td>
-            </tr>
-            <tr>
-                <td>Capacité :</td>
-                <td>{{ room.room_capacity }}</td>
-            </tr>
-        </table>
-    </div>
-</a>
+<div class="block_container">
+    <a routerLink="/detail-room/{{ room.room_id }}" *ngFor="let room of rooms" class="room_card">
+        <div class="spacebw_header">
+            <h3>{{ room.room_name }}</h3>
+            <a routerLink="/new-lot/{{ room.room_id }}" class="add_btn">+</a>
+        </div>
+        <div style="align-self: flex-end;">
+            <table>
+                <tr>
+                    <td>Luminosité :</td>
+                    <td>{{ room.brightness_value }}</td>
+                </tr>
+                <tr>
+                    <td>Température :</td>
+                    <td>{{ room.temperature_value }}</td>
+                </tr>
+                <tr>
+                    <td>Humidité :</td>
+                    <td>{{ room.humidity_value }}</td>
+                </tr>
+                <tr>
+                    <td>Capacité :</td>
+                    <td>{{ room.room_capacity }}</td>
+                </tr>
+            </table>
+        </div>
+    </a>
+</div>

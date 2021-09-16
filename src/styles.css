@@ -79,3 +79,19 @@ input:focus, textarea:focus {
     color: #2D9F46;
     cursor: pointer;
 }
+
+/* Container */
+.block_container {
+    display: flex;
+}
+
+/* Tables */
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: solid 2px #00CC76;
+    height: 32px;
+}
