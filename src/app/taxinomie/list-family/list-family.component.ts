@@ -13,7 +13,7 @@ export class ListFamilyComponent implements OnInit {
   constructor(private familysService: FamilysService) { }
 
   ngOnInit(): void {
-    this.getFamilys();
+    this.getFamilys();    
   }
 
   getFamilys() {

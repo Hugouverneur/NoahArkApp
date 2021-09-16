@@ -1,0 +1,10 @@
+<h1>Ajouter un espace de stockage</h1>
+
+<form [formGroup]="addstorageForm" (ngSubmit)="createStorage()">
+
+    <p>Nombre de structure de stockage disponible :</p>
+    <input type="number" min="0" id="storage_numberofroom" formControlName="storage_numberofroom">
+
+    <button class="primary_btn" type="submit" [disabled]="addstorageForm.invalid">Valider</button>
+
+</form>

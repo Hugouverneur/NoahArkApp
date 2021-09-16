@@ -2,11 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment'
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class SiteService {
+export class RoomsService {
 
   constructor(private http: HttpClient) { }
 
@@ -23,19 +22,15 @@ export class SiteService {
     });
   }
 
-  getSites() {
-    return this.request('GET', `${environment.serverUrl}/site`);
+  getRooms(roomId: number) {
+    return this.request('GET', `${environment.serverUrl}/room/${roomId}`);
   }
 
-  getSiteDetail(siteId) {
-    return this.request('GET', `${environment.serverUrl}/site-detail/${siteId}`);
+  createRooms(room) {
+    return this.request('POST', `${environment.serverUrl}/room`, room);
   }
 
-  createSites(site) {
-    return this.request('POST', `${environment.serverUrl}/site`, site);
-  }
-
-  deleteSite(site) {
-    return this.request('DELETE', `${environment.serverUrl}/site/${site.site_id}`, site);
+  deleteRoom(room) {
+    return this.request('DELETE', `${environment.serverUrl}/room/${room.room_id}`, room);
   }
 }

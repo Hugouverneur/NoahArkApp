@@ -27,6 +27,9 @@ import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinom
 import { ListSiteComponent } from './components/site-manager/list-site/list-site.component';
 import { NewSiteComponent } from './components/site-manager/new-site/new-site.component';
 import { DetailSiteComponent } from './components/site-manager/detail-site/detail-site.component';
+import { NewStorageComponent } from './components/site-manager/new-storage/new-storage.component';
+import { NewRoomComponent } from './components/site-manager/new-room/new-room.component';
+import { DetailStorageComponent } from './components/site-manager/detail-storage/detail-storage.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { DetailSiteComponent } from './components/site-manager/detail-site/detai
     ListSiteComponent,
     NewSiteComponent,
     DetailSiteComponent,
+    NewStorageComponent,
+    NewRoomComponent,
+    DetailStorageComponent,
   ],
   imports: [
     BrowserModule,

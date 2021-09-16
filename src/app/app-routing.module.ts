@@ -4,8 +4,11 @@ import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinom
 import { ListUsersComponent } from './components/rh-manager/list-users/list-users.component';
 import { NewUserComponent } from './components/rh-manager/new-user/new-user.component';
 import { DetailSiteComponent } from './components/site-manager/detail-site/detail-site.component';
+import { DetailStorageComponent } from './components/site-manager/detail-storage/detail-storage.component';
 import { ListSiteComponent } from './components/site-manager/list-site/list-site.component';
+import { NewRoomComponent } from './components/site-manager/new-room/new-room.component';
 import { NewSiteComponent } from './components/site-manager/new-site/new-site.component';
+import { NewStorageComponent } from './components/site-manager/new-storage/new-storage.component';
 import { ListClassComponent } from './taxinomie/list-class/list-class.component';
 import { ListFamilyComponent } from './taxinomie/list-family/list-family.component';
 import { ListGenuComponent } from './taxinomie/list-genu/list-genu.component';
@@ -28,7 +31,10 @@ const routes: Routes = [
   { path: 'user-new', component: NewUserComponent },
   { path: 'sites-new', component: NewSiteComponent },
   { path: 'sites-list', component: ListSiteComponent },
-  { path: 'sites-detail/:id', component: DetailSiteComponent },
+  { path: 'site-detail/:id', component: DetailSiteComponent },
+  { path: 'new-storage/:id', component: NewStorageComponent },
+  { path: 'detail-storage/:id', component: DetailStorageComponent },
+  { path: 'new-room/:id', component: NewRoomComponent },
 
   { path: 'taxinomie-list', component: ListTaxinomieComponent },
   { path: 'kingdoms-new', component: NewKingdomComponent },

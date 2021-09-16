@@ -1,1 +1,9 @@
-<p>detail-site works!</p>
+<h1>Site</h1>
+
+<a routerLink="/new-storage/{{ siteId }}">Ajouter un espace de stockage</a>
+
+<h2>Liste des espaces de stockages :</h2>
+<a routerLink="/detail-storage/{{ storage.storage_id }}" *ngFor="let storage of storages" class="room_card">
+    <h3>Espace {{ storage.storage_id }}</h3>
+    <p style="align-self: flex-end;">{{ storage.storage_numberofroom }} espace(s)</p>
+</a>

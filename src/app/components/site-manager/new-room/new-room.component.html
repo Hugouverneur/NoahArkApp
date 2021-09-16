@@ -1,0 +1,22 @@
+<h1>Ajouter une salle</h1>
+
+<form [formGroup]="addRoomForm" (ngSubmit)="createRoom()">
+
+    <p>Nom de la salle :</p>
+    <input type="string" id="room_name" formControlName="room_name">
+
+    <p>Liminosité (en Lumen) :</p>
+    <input type="number" min="0" id="brightness_value" formControlName="brightness_value">
+
+    <p>Température (en Degré) :</p>
+    <input type="number" min="0" id="temperature_value" formControlName="temperature_value">
+
+    <p>Humidité (en Gramme d'eau/m3) :</p>
+    <input type="number" min="0" id="humidity_value" formControlName="humidity_value">
+
+    <p>Capacité de la salle :</p>
+    <input type="number" min="0" id="room_capacity" formControlName="room_capacity">
+
+    <button class="primary_btn" type="submit" [disabled]="addRoomForm.invalid">Valider</button>
+
+</form>

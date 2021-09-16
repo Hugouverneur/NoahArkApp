@@ -6,7 +6,7 @@ import { environment } from '../../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
-export class SiteService {
+export class StorageService {
 
   constructor(private http: HttpClient) { }
 
@@ -23,19 +23,15 @@ export class SiteService {
     });
   }
 
-  getSites() {
-    return this.request('GET', `${environment.serverUrl}/site`);
+  getStorages(siteId: number) {
+    return this.request('GET', `${environment.serverUrl}/storage/${siteId}`);
   }
 
-  getSiteDetail(siteId) {
-    return this.request('GET', `${environment.serverUrl}/site-detail/${siteId}`);
+  createStorages(storage) {
+    return this.request('POST', `${environment.serverUrl}/storage`, storage);
   }
 
-  createSites(site) {
-    return this.request('POST', `${environment.serverUrl}/site`, site);
-  }
-
-  deleteSite(site) {
-    return this.request('DELETE', `${environment.serverUrl}/site/${site.site_id}`, site);
+  deleteStorage(storage) {
+    return this.request('DELETE', `${environment.serverUrl}/Storage/${storage.storage_id}`, storage);
   }
 }
