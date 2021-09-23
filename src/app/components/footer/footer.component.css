@@ -7,4 +7,6 @@
     width: 100%;
     height: 64px;
     background-color: #DFE3E8;
+    position: absolute;
+    bottom: 0;
 }

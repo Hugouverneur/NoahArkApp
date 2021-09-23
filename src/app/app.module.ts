@@ -33,6 +33,7 @@ import { DetailStorageComponent } from './components/site-manager/detail-storage
 import { NewLotComponent } from './components/site-manager/new-lot/new-lot.component';
 import { DetailRoomComponent } from './components/site-manager/detail-room/detail-room.component';
 import { MoveLotComponent } from './components/site-manager/move-lot/move-lot.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { MoveLotComponent } from './components/site-manager/move-lot/move-lot.co
     NewLotComponent,
     DetailRoomComponent,
     MoveLotComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

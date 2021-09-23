@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 import { ListTaxinomieComponent } from './components/list-taxinomie/list-taxinomie.component';
 import { ListUsersComponent } from './components/rh-manager/list-users/list-users.component';
 import { NewUserComponent } from './components/rh-manager/new-user/new-user.component';
@@ -29,7 +30,9 @@ import { NewSpiciesComponent } from './taxinomie/new-spicies/new-spicies.compone
 
 
 const routes: Routes = [
-  { path: '', pathMatch: "full", component: ListUsersComponent },
+  { path: '', pathMatch: "full", component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+
   { path: 'user-list', component: ListUsersComponent },
   { path: 'user-new', component: NewUserComponent },
   { path: 'sites-new', component: NewSiteComponent },

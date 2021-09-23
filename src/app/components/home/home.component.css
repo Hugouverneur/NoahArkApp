@@ -1,0 +1,23 @@
+.home_sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 32px;
+    transition: ease 0.5s;
+}
+
+.bloc_feature svg {
+    transition: ease 0.1s
+}
+
+.bloc_feature:hover svg{
+    fill: #2D9F46;
+    transform: scale(1.2);
+}
