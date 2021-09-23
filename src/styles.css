@@ -83,6 +83,7 @@ input:focus, textarea:focus {
 /* Container */
 .block_container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Tables */
